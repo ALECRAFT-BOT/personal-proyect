@@ -31,7 +31,7 @@
         </header>
 
         <main class="flex-1 flex items-center justify-center px-4 bg-gradient-to-br from-neutral-900 via-neutral-800 to-cyan-950">
-            <div class="flex flex-col items-center w-full justify-center" style="gap: 90vh; min-height: 100vh; padding-top: 20vh; padding-bottom: 35vh;">
+            <div class="flex flex-col items-center w-full justify-center" style="gap: 32vh; min-height: 100vh; padding-top: 8vh; padding-bottom: 12vh;">
                 <section class="max-w-2xl w-full bg-neutral-800 rounded-xl shadow-lg p-8 flex flex-col items-center text-center text-neutral-100 transition-opacity duration-1000 opacity-100" id="sobre-mi">
                     <h2 class="text-2xl font-bold text-cyan-400 mb-4">Sobre mí</h2>
                     <p class="text-lg leading-relaxed">
@@ -56,7 +56,17 @@
         </main>
         <footer class="bg-neutral-900 text-neutral-400 text-center h-10 flex items-center justify-center text-xs mt-auto shadow-inner">
     <script>
-      
+      // Mostrar experiencia laboral si el hash está presente al cargar
+      document.addEventListener('DOMContentLoaded', function() {
+        if (window.location.hash === '#experiencia-laboral') {
+          const exp = document.getElementById('experiencia-laboral');
+          if (exp) exp.style.opacity = 1;
+          window.scrollTo({
+            top: exp.getBoundingClientRect().top + window.scrollY - 60,
+            behavior: 'smooth'
+          });
+        }
+      });
     </script>
             <span class="tracking-wide">&copy; 2025 Walter Toscano</span>
         </footer>
