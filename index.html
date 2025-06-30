@@ -56,15 +56,27 @@
         </main>
         <footer class="bg-neutral-900 text-neutral-400 text-center h-10 flex items-center justify-center text-xs mt-auto shadow-inner">
     <script>
-      // Mostrar experiencia laboral si el hash está presente al cargar
-      document.addEventListener('DOMContentLoaded', function() {
+      // Mostrar experiencia laboral si el hash está presente al cargar o al hacer scroll
+      function showExperienciaIfHash() {
+        const exp = document.getElementById('experiencia-laboral');
+        if (!exp) return;
         if (window.location.hash === '#experiencia-laboral') {
-          const exp = document.getElementById('experiencia-laboral');
-          if (exp) exp.style.opacity = 1;
-          window.scrollTo({
-            top: exp.getBoundingClientRect().top + window.scrollY - 60,
-            behavior: 'smooth'
-          });
+          exp.style.opacity = 1;
+          setTimeout(() => {
+            exp.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 100);
+        }
+      }
+      document.addEventListener('DOMContentLoaded', showExperienciaIfHash);
+      window.addEventListener('hashchange', showExperienciaIfHash);
+      // Si el usuario hace scroll y la sección es visible, mostrarla
+      window.addEventListener('scroll', function() {
+        const exp = document.getElementById('experiencia-laboral');
+        if (!exp) return;
+        const rect = exp.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        if (rect.top < windowHeight && rect.bottom > 0) {
+          exp.style.opacity = 1;
         }
       });
     </script>
