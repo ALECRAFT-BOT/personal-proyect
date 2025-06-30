@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>proyecto personal</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="/js/index.js"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100">
+    <div class="min-h-screen flex flex-col">
+
+        <header class="bg-neutral-900 flex items-center justify-between px-8 py-4 shadow-md">
+            <a href="index.html" class="text-white-400 text-xl font-bold tracking-wide cursor-pointer">walter toscano</a>
+            <nav class="flex items-center space-x-8">
+                <a class="text-neutral-100 text-lg font-semibold cursor-pointer hover:text-white-400 transition-colors" href="contacto.html">contacto</a>
+                <a class="text-neutral-100 text-lg font-semibold cursor-pointer hover:text-white-400 transition-colors" href="#experiencia-laboral">experiencia</a>
+                <a class="bg-neutral-800 p-3 w-12 h-12 flex items-center justify-center rounded-full hover:scale-105 transition-transform relative overflow-hidden group" href="https://www.linkedin.com/in/walter-alejandro-toscano-delgado/">
+                    <span class="absolute inset-0 rounded-full bg-white scale-0 group-hover:scale-100 transition-transform duration-300 origin-center z-0"></span>
+                    <svg width="24" height="24" fill="currentColor" class="text-cyan-400 group-hover:text-neutral-950 relative z-10 transition-colors duration-300">
+                        <use xlink:href="./assets/sprite.svg#linkedin" />
+                    </svg>
+                </a>
+                <a class="bg-neutral-800 p-3 w-12 h-12 flex items-center justify-center rounded-full hover:scale-105 transition-transform relative overflow-hidden group" href="https://github.com/ALECRAFT-BOT">
+                    <span class="absolute inset-0 rounded-full bg-stone-500 scale-0 group-hover:scale-100 transition-transform duration-300 origin-center z-0"></span>
+                    <svg width="24" height="24" fill="currentColor" class="text-purple-400 relative z-10">
+                        <use xlink:href="./assets/sprite.svg#github" />
+                    </svg>
+                </a>
+            </nav>
+        </header>
+
+        <main class="flex-1 flex items-center justify-center px-4 bg-gradient-to-br from-neutral-900 via-neutral-800 to-cyan-950">
+            <div class="flex flex-col items-center w-full justify-center" style="gap: 90vh; min-height: 100vh; padding-top: 20vh; padding-bottom: 35vh;">
+                <section class="max-w-2xl w-full bg-neutral-800 rounded-xl shadow-lg p-8 flex flex-col items-center text-center text-neutral-100 transition-opacity duration-1000 opacity-100" id="sobre-mi">
+                    <h2 class="text-2xl font-bold text-cyan-400 mb-4">Sobre mí</h2>
+                    <p class="text-lg leading-relaxed">
+        Ingeniero de Sistemas en formación con una fuerte orientación al aprendizaje autónomo, resolución de problemas y mejora continua. Cuento con experiencia en el desarrollo backend utilizando <span class="text-purple-400 font-medium">.NET</span>, <span class="text-purple-400 font-medium">javascript</span> y <span class="text-purple-400 font-medium">frameworks y bibliotecas relacionados</span>, así como en el diseño y consumo de bases de datos relacionales mediante <span class="text-cyan-400 font-medium">SQL</span>.<br><br>
+        Manejo conceptos fundamentales de <span class="text-cyan-400 font-medium">Java</span> y aplico principios de arquitectura limpia y buenas prácticas de desarrollo como <span class="text-cyan-400 font-medium">SOLID</span> y <span class="text-cyan-400 font-medium">Domain-Driven Design (DDD)</span>. Además, tengo experiencia trabajando bajo metodologías ágiles y una sólida comprensión del ciclo de vida del software, desde el análisis hasta la entrega continua.<br><br>
+        También tengo manejo de plataformas de versionado de código como <span class="text-cyan-400 font-medium">Git</span> y conocimientos en ecosistemas de <span class="text-cyan-400 font-medium">DevOps</span> para la integración y entrega continua.
+                    </p>
+                </section>
+                <section class="max-w-2xl w-full bg-neutral-800 rounded-xl shadow-lg p-8 flex flex-col items-center text-center text-neutral-100 transition-opacity duration-1000 opacity-0" id="experiencia-laboral">
+                    <h2 class="text-2xl font-bold text-cyan-400 mb-4">Experiencia Laboral</h2>
+                    <div class="text-lg leading-relaxed w-full max-w-xl text-center mx-auto space-y-6">
+                        <span class="font-semibold text-cyan-300">Satrack</span><br>
+                        <span class="text-neutral-200">Aprendiz de desarrollo backend</span><br>
+                        <span class="text-neutral-400 block">6 meses</span>
+                        <span class="text-neutral-400 block">Durante mi experiencia en Satrack, participé en la identificación y resolución de problemas técnicos, mantenimiento de código y desarrollo de nuevas funcionalidades, aplicando principios como SOLID y arquitecturas basadas en Domain-Driven Design (DDD).</span>
+                        <span class="text-neutral-400 block">También tengo conocimientos en tecnologías frontend como HTML, CSS y React, así como una sólida comprensión de metodologías ágiles y colaboración en equipo.</span>
+                        <span class="text-neutral-400 block">Me considero una persona ética, autodidacta y enfocada en aportar valor a cada proyecto en el que participo, con una visión clara hacia el crecimiento profesional continuo.</span>
+                        <a href="https://drive.google.com/file/d/1pnbnQgo2J83Nw3IbgPm2Mp33HpoZa7yz/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block mt-2 text-cyan-400 underline hover:text-cyan-300 transition-colors">Ver certificación</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="bg-neutral-900 text-neutral-400 text-center h-10 flex items-center justify-center text-xs mt-auto shadow-inner">
+    <script>
+      
+    </script>
+            <span class="tracking-wide">&copy; 2025 Walter Toscano</span>
+        </footer>
+    </div>
+</body>
+</html>

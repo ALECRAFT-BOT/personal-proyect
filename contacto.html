@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Walter Toscano</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="/js/index.js"></script>
+  <script src="/js/contacto.js"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100">
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-neutral-900 flex items-center justify-between px-8 py-4 shadow-md">
+            <a href="index.html" class="text-white-400 text-xl font-bold tracking-wide cursor-pointer">walter toscano</a>
+            <nav class="flex items-center space-x-8">
+                <a class="text-neutral-100 text-lg font-semibold cursor-pointer hover:text-white-400 transition-colors" href="contacto.html">contacto</a>
+                <a class="text-neutral-100 text-lg font-semibold cursor-pointer hover:text-white-400 transition-colors" href="index.html#experiencia-laboral" id="nav-experiencia">experiencia</a>
+                <a class="bg-neutral-800 p-3 w-12 h-12 flex items-center justify-center rounded-full hover:scale-105 transition-transform relative overflow-hidden group" href="https://www.linkedin.com/in/walter-alejandro-toscano-delgado/">
+                    <span class="absolute inset-0 rounded-full bg-white scale-0 group-hover:scale-100 transition-transform duration-300 origin-center z-0"></span>
+                    <svg width="24" height="24" fill="currentColor" class="text-cyan-400 group-hover:text-neutral-950 relative z-10 transition-colors duration-300">
+                        <use xlink:href="./assets/sprite.svg#linkedin" />
+                    </svg>
+                </a>
+                <a class="bg-neutral-800 p-3 w-12 h-12 flex items-center justify-center rounded-full hover:scale-105 transition-transform relative overflow-hidden group" href="https://github.com/ALECRAFT-BOT">
+                    <span class="absolute inset-0 rounded-full bg-stone-500 scale-0 group-hover:scale-100 transition-transform duration-300 origin-center z-0"></span>
+                    <svg width="24" height="24" fill="currentColor" class="text-purple-400 relative z-10">
+                        <use xlink:href="./assets/sprite.svg#github" />
+                    </svg>
+                </a>
+            </nav>
+        </header>
+        <main class="flex-1 flex items-center justify-center px-4 bg-gradient-to-br from-neutral-900 via-neutral-800 to-cyan-950">
+            <section class="max-w-lg w-full bg-neutral-800 rounded-xl shadow-lg p-8 flex flex-col items-center text-center text-neutral-100 mt-16 mb-16">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-6">Contáctame</h2>
+                <form action="mailto:walter.toscano@email.com" method="POST" enctype="text/plain" class="w-full space-y-6">
+                    <div class="flex flex-col items-start w-full">
+                        <label for="nombre" class="mb-2 text-cyan-300 font-semibold">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required class="w-full rounded-lg bg-neutral-900 border border-neutral-700 px-4 py-2 text-neutral-100 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition" />
+                    </div>
+                    <div class="flex flex-col items-start w-full">
+                        <label for="email" class="mb-2 text-cyan-300 font-semibold">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required class="w-full rounded-lg bg-neutral-900 border border-neutral-700 px-4 py-2 text-neutral-100 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition" />
+                    </div>
+                    <div class="flex flex-col items-start w-full">
+                        <label for="mensaje" class="mb-2 text-cyan-300 font-semibold">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required class="w-full rounded-lg bg-neutral-900 border border-neutral-700 px-4 py-2 text-neutral-100 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"></textarea>
+                    </div>
+                    <button type="submit" class="bg-cyan-400 text-neutral-900 font-bold py-2 px-8 rounded-lg shadow hover:bg-cyan-300 transition-colors mt-4">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer class="bg-neutral-900 text-neutral-400 text-center h-10 flex items-center justify-center text-xs mt-auto shadow-inner">
+            <span class="tracking-wide">&copy; 2025 Walter Toscano</span>
+        </footer>
+    </div>
+</body>
+</html>
