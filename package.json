@@ -1,0 +1,23 @@
+{
+  "name": "personal-proyect",
+  "version": "1.0.0",
+  "description": "proyect personal - portafolio",
+  "keywords": [
+    "proyect"
+  ],
+  "homepage": "https://github.com/ALECRAFT-BOT/personal-proyect#readme",
+  "bugs": {
+    "url": "https://github.com/ALECRAFT-BOT/personal-proyect/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALECRAFT-BOT/personal-proyect.git"
+  },
+  "license": "ISC",
+  "author": "walter toscano",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
